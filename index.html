@@ -1,249 +1,96 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>جوهرة جدة لصيانة وتعديل دواليب المطابخ</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    }
-    body {
-      background-color: #f8fafc;
-      color: #1e293b;
-      line-height: 1.6;
-      padding-bottom: 90px;
-    }
-    .header {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
-      color: white;
-      text-align: center;
-      padding: 30px 15px;
-    }
-    .header .bismillah {
-      font-size: 14px;
-      color: #93c5fd;
-      margin-bottom: 8px;
-    }
-    .header h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    .header p {
-      font-size: 15px;
-      color: #cbd5e1;
-    }
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px 15px;
-    }
-    .main-actions {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-bottom: 25px;
-    }
-    .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px;
-      border-radius: 10px;
-      font-size: 17px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
-    .btn:active {
-      opacity: 0.85;
-    }
-    .btn-call {
-      background-color: #2563eb;
-      color: white;
-    }
-    .btn-whatsapp {
-      background-color: #16a34a;
-      color: white;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    .card h2 {
-      font-size: 19px;
-      color: #0f172a;
-      margin-bottom: 15px;
-      border-right: 4px solid #2563eb;
-      padding-right: 10px;
-    }
-    .service-item {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 15px;
-      border-bottom: 1px solid #f1f5f9;
-      padding-bottom: 12px;
-    }
-    .service-item:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    .check-mark {
-      color: #16a34a;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .service-item h3 {
-      font-size: 16px;
-      color: #1e293b;
-      margin-bottom: 4px;
-    }
-    .service-item p {
-      font-size: 14px;
-      color: #64748b;
-    }
-    .features-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    .feature-box {
-      background-color: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 12px;
-      text-align: center;
-    }
-    .feature-box strong {
-      display: block;
-      color: #0f172a;
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-    .feature-box span {
-      font-size: 12px;
-      color: #64748b;
-    }
-    .fixed-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: white;
-      display: flex;
-      padding: 10px 15px;
-      gap: 10px;
-      box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
-      z-index: 100;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .fixed-bar a {
-      flex: 1;
-      padding: 12px;
-      border-radius: 8px;
-      text-align: center;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 15px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مؤسسة جوهرة جدة | تركيب سيراميك وبورسلين ورخام بجدة</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6;padding-bottom:80px}
+.header{background:#0f172a;color:#fff;text-align:center;padding:22px 16px 18px;border-bottom:3px solid #d97706}
+.basmala{font-size:18px;color:#fbbf24;font-weight:bold;margin-bottom:8px}
+.title{font-size:24px;font-weight:bold;margin-bottom:6px}
+.sub{font-size:15px;color:#94a3b8;margin-bottom:15px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;font-size:16px;font-weight:bold;text-decoration:none;color:#fff;margin:5px}
+.btn-call{background:#16a34a}
+.btn-wa{background:#25d366}
+.promo-box{max-width:600px;margin:15px auto;padding:16px;background:#fffbeb;border:2px dashed #d97706;border-radius:12px;text-align:center;color:#92400e;font-size:17px;font-weight:bold;line-height:1.7}
+.box{max-width:600px;margin:15px auto;padding:16px;background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);border:1px solid #e2e8f0}
+.sec-title{font-size:18px;font-weight:bold;color:#0f172a;margin-bottom:12px;border-right:4px solid #d97706;padding-right:10px}
+.cert-img{width:100%;border-radius:8px;border:2px solid #d97706;display:block}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.work-img{width:100%;height:180px;object-fit:cover;border-radius:8px;background:#e2e8f0;display:block}
+.list{list-style:none;padding:0}
+.list li{font-size:15px;margin-bottom:10px;font-weight:600;color:#334155}
+.list li::before{content:"✓ ";color:#16a34a;font-weight:bold}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{background:#f1f5f9;color:#334155;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:600;border:1px solid #cbd5e1}
+.bar{position:fixed;bottom:0;left:0;right:0;background:#fff;padding:10px 14px;display:flex;gap:10px;box-shadow:0 -4px 15px rgba(0,0,0,0.12);z-index:99}
+.bar a{flex:1;text-align:center;padding:13px 0;border-radius:8px;font-size:16px;font-weight:bold;text-decoration:none;color:#fff}
+</style>
 </head>
 <body>
 
-  <div class="header">
-    <div class="bismillah">بسم الله الرحمن الرحيم</div>
-    <h1>جوهرة جدة لصيانة وتعديل دواليب المطابخ</h1>
-    <p>خدمة فورية متخصصة داخل جدة بقطع غيار أصلية وضمان معتمد على جودة العمل</p>
-  </div>
+<div class="header">
+<div class="basmala">بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
+<h1 class="title">مؤسسة جوهرة جدة</h1>
+<p class="sub">تركيب سيراميك وبورسلين ورخام بجدة بأعلى دقة واحتراف</p>
+<div>
+<a href="tel:0548807357" class="btn btn-call">اتصال مباشر 0548807357</a>
+<a href="https://wa.me/966548807357?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B5%D9%88%D8%B1%D8%AA%20%D9%85%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%B4%D8%BA%D9%84%20%D9%88%D9%85%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AA%D9%82%D8%AF%D9%8A%D8%B1%20%D9%81%D9%88%D8%B1%D9%8A%20%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%86%D8%A9%20%D8%B3%D8%B1%D9%8A%D8%B9%D8%A9%20%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83%20%D9%88%D8%A8%D9%88%D8%B1%D8%B3%D9%84%D9%8A%D9%86%20%D9%81%D9%8A%20%D8%AC%D8%AF%D8%A9" class="btn btn-wa">واتساب مباشر</a>
+</div>
+</div>
 
-  <div class="container">
+<div class="promo-box">
+وفر وقتك وصور مكان الشغل وأرسل الصور على الواتساب أو اتصل بنا الآن لتحصل على تقدير فوري ومعاينة سريعة واستلم شغلك بأعلى دقة ليزر واستواء تام داخل جدة
+</div>
 
-    <div class="main-actions">
-      <a href="tel:0565743171" class="btn btn-call">اتصال مباشر 0565743171</a>
-      <a href="https://wa.me/966565743171?text=السلام%20عليكم%20ورحمة%20الله%20وبركاته%20عندي%20شغل%20صيانة%20وتعديل%20دواليب%20مطابخ%20وأريد%20معاينة%20وتحديد%20التكلفة" class="btn btn-whatsapp">مراسلة واتساب</a>
-    </div>
+<div class="box">
+<h2 class="sec-title">شهادة خبرة معتمدة في فن وتخصص السيراميك</h2>
+<img src="1.png" alt="شهادة خبرة معتمدة تركيب سيراميك ورخام" class="cert-img">
+</div>
 
-    <div class="card">
-      <h2>خدمات صيانة المطابخ المتاحة</h2>
-      
-      <div class="service-item">
-        <div class="check-mark">✓</div>
-        <div>
-          <h3>تصليح واستبدال المفصلات الهيدروليك</h3>
-          <p>علاج سقوط وارتخاء أبواب الدواليب وتركيب مفصلات هيدروليك أصلية ضد الصدأ مع ضبط ميزان الأبواب بدقة كاملة</p>
-        </div>
-      </div>
+<div class="box">
+<h2 class="sec-title">معايير التركيب والضمان الفني المعتمد</h2>
+<ul class="list">
+<li>استواء كامل ودقة هندسية عالية بميزان الليزر الحديث</li>
+<li>فرد وتغطية كاملة للمونة والغراء الخاص تحت البلاط لمنع التطبيل وتفريغ الهواء</li>
+<li>تركيب المقاسات الكبيرة والسلابات وتطابق عروق البورسلين بدقة واحتراف</li>
+<li>قص 45 درجة للشطف وزوايا متناسقة للحمامات والمطابخ والمغاسل</li>
+<li>الضمان يشمل استواء البلاط ودقة التركيب بالليزر أثناء التنفيذ فقط بدون أعمال عزل</li>
+</ul>
+</div>
 
-      <div class="service-item">
-        <div class="check-mark">✓</div>
-        <div>
-          <h3>تغيير سحابات ومسارات الأدراج الأصلية</h3>
-          <p>استبدال مجاري وسحابات الأدراج التالفة بسحابات رولمان بلي قوية تتحمل الأوزان العالية مع نعومة تامة بالحركة</p>
-        </div>
-      </div>
+<div class="box">
+<h2 class="sec-title">نماذج من أعمالنا ومشاريعنا داخل جدة</h2>
+<div class="grid">
+<img src="2.jpg" alt="تركيب بورسلين بجدة" class="work-img" loading="lazy">
+<img src="3.jpg" alt="تركيب سيراميك جدران بجدة" class="work-img" loading="lazy">
+<img src="4.jpg" alt="معلم مبلط رخام بجدة" class="work-img" loading="lazy">
+<img src="o.jpg" alt="تشطيب أرضيات وسلابات بجدة" class="work-img" loading="lazy">
+</div>
+</div>
 
-      <div class="service-item">
-        <div class="check-mark">✓</div>
-        <div>
-          <h3>تعديل وقص الدواليب لغسالة الصحون</h3>
-          <p>تجهيز وتعديل أماكن غسالات الصحون والميكرويف بدقة واحترافية عالية مع الحفاظ الكامل على شكل وديكور المطبخ</p>
-        </div>
-      </div>
+<div class="box">
+<h2 class="sec-title">نطاق التغطية والخدمة الفورية داخل جدة</h2>
+<div class="tags">
+<span class="tag">الحمدانية</span>
+<span class="tag">الخالدية</span>
+<span class="tag">الشاطئ</span>
+<span class="tag">أبحر الشمالية</span>
+<span class="tag">السلامة</span>
+<span class="tag">الصفا</span>
+<span class="tag">مشرف</span>
+<span class="tag">الروضة</span>
+<span class="tag">الفضيلة</span>
+<span class="tag">جميع أحياء جدة</span>
+</div>
+</div>
 
-      <div class="service-item">
-        <div class="check-mark">✓</div>
-        <div>
-          <h3>صيانة وترميم مطابخ الألمنيوم والخشب</h3>
-          <p>معالجة أضرار الرطوبة وتآكل الألواح وتغيير القواعد التالفة أسفل الأحواض وتثبيت الأرفف الهابطة باحترافية</p>
-        </div>
-      </div>
-
-      <div class="service-item">
-        <div class="check-mark">✓</div>
-        <div>
-          <h3>تبديل المقابض وتجديد إكسسوارات الدواليب</h3>
-          <p>تركيب مسكات حديثة وسلال سحب داخلية ومساعدات رفع هيدروليك للأبواب العلوية لتجديد مظهر المطبخ بالكامل</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="card">
-      <h2>مميزات الخدمة بجدة</h2>
-      <div class="features-grid">
-        <div class="feature-box">
-          <strong>سرعة في الوصول</strong>
-          <span>خدمة فورية في جميع أحياء جدة</span>
-        </div>
-        <div class="feature-box">
-          <strong>قطع أصلية قوية</strong>
-          <span>مفصلات وسحابات متينة تعيش طويلا</span>
-        </div>
-        <div class="feature-box">
-          <strong>دقة واحترافية</strong>
-          <span>خبرة متخصصة بوزن وتعديل المطابخ</span>
-        </div>
-        <div class="feature-box">
-          <strong>أسعار مناسبة</strong>
-          <span>وضوح كامل في السعر قبل البدء</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="fixed-bar">
-    <a href="tel:0565743171" class="btn-call">اتصال الآن</a>
-    <a href="https://wa.me/966565743171?text=السلام%20عليكم%20ورحمة%20الله%20وبركاته%20عندي%20شغل%20صيانة%20وتعديل%20دواليب%20مطابخ%20وأريد%20معاينة%20وتحديد%20التكلفة" class="btn-whatsapp">واتساب مباشر</a>
-  </div>
+<div class="bar">
+<a href="tel:0548807357" class="btn-call">اتصال فوري</a>
+<a href="https://wa.me/966548807357?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B5%D9%88%D8%B1%D8%AA%20%D9%85%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%B4%D8%BA%D9%84%20%D9%88%D9%85%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AA%D9%82%D8%AF%D9%8A%D8%B1%20%D9%81%D9%88%D8%B1%D9%8A%20%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%86%D8%A9%20%D8%B3%D8%B1%D9%8A%D8%B9%D8%A9%20%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83%20%D9%88%D8%A8%D9%88%D8%B1%D8%B3%D9%84%D9%8A%D9%86%20%D9%81%D9%8A%20%D8%AC%D8%AF%D8%A9" class="btn-wa">واتساب فوري</a>
+</div>
 
 </body>
 </html>
